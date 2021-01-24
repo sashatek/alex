@@ -1,0 +1,17 @@
+<h1>{{sequence}}</h1>
+<button type="button" class="btn btn-primary" (click)="increment()">increment</button>
+<button type="button" class="btn btn-danger ml-4" (click)="decrement()">decrement</button>
+<div style="width: 300px;height: 300px;margin-top: 50px;margin-bottom: 50px;border: gray 2px solid"
+    style.background-color="rgb({{rColor}}, {{gColor}}, {{bColor}})">
+
+</div>
+<div style="width: 300px;">
+    <input type="range" min="0" max="255" [(ngModel)]="rColor" style="width: 250px;" />
+    <span style="color: red;font-weight: bold;"> R {{rColor}}</span>
+
+    <input type="range" min="0" max="255" [(ngModel)]="gColor" style="width: 250px;" />
+    <span style="color: green;font-weight: bold;"> G {{gColor}}</span>
+
+    <input type="range" min="0" max="255" [(ngModel)]="bColor" style="width: 250px;" />
+    <span style="color: blue; font-weight: bold;"> B {{bColor}}</span>
+</div>
